@@ -19,6 +19,52 @@
             <div class="row">
                 <div class="col-md-12 pr-md-1">
                     <div class="form-group">
+                        <label>Genero</label>
+                        <select class="form-control">
+                            <option>Terror</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pr-md-1">
+                    <div class="form-group">
+                        <label>Editora</label>
+                        <select class="form-control">
+                            <option>Editora</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pr-md-1">
+                    <div class="form-group">
+                        <label>Genero</label>
+                        <select class="form-control">
+                            <option>Terror</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 pr-md-1">
+                    <div class="form-group">
+                        <label>Autores</label>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="txtAutores">
+                                    <label class="custom-control-label">Diego Porcellis</label>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 pr-md-1">
+                    <div class="form-group">
                         <label>Páginas</label>
                         <input type="number" name="txtPagina" required class="form-control" placeholder="Número de Páginas" >
                     </div>
