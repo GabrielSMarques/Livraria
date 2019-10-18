@@ -55,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="./../livro/LivroWS?acao=list">
+            <a href="./../livro/LivroWS?acao=add">
               <i class="tim-icons icon-tag"></i>
               <p>Livro</p>
             </a>

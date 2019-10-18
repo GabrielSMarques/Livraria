@@ -15,23 +15,14 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-md-12 pr-md-1">
-                    <div class="form-group">
-                        <label>Genero</label>
-                        <select class="form-control">
-                            <option>Terror</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-md-12 pr-md-1">
                     <div class="form-group">
                         <label>Editora</label>
-                        <select class="form-control">
-                            <option>Editora</option>
+                        <select class="form-control" >
+                            <c:forEach items="${editoras}" var="obj">
+                            <option value="${obj.id}">${obj.nome}</option>
+                            </c:forEach>
                         </select>
                     </div>
                 </div>
@@ -40,9 +31,11 @@
                 <div class="col-md-12 pr-md-1">
                     <div class="form-group">
                         <label>Genero</label>
-                        <select class="form-control">
-                            <option>Terror</option>
-                        </select>
+                        <select class="form-control" name="txtGenero" multiple>
+                            <c:forEach items="${generos}" var="obj">
+                            <option value="${obj.id}">${obj.nome}</option>
+                            </c:forEach>
+                            </select>
                     </div>
                 </div>
             </div>
@@ -51,12 +44,14 @@
                     <div class="form-group">
                         <label>Autores</label>
                         <div class="row">
+                            <c:forEach items="${autores}" var="obj">
                             <div class="col-md-3">
                                 <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" name="txtAutores">
-                                    <label class="custom-control-label">Diego Porcellis</label>
+                                    <input type="checkbox" value="${obj.id}" id="u${obj.id}" class="custom-control-input" name="txtAutores">
+                                    <label class="custom-control-label" for="u${obj.id}">${obj.nome}</label>
                                 </div> 
                             </div>
+                            </c:forEach>
                         </div>
                     </div>
                 </div>
